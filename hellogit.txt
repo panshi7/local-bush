@@ -1,1 +1,5 @@
-sadfafsdfNKADSJHAJIHDIAHIDSH
+1、  git add <指定文件名字>  或者 . 选择全部文件
+2、  git status  查看文件是否变成绿色
+3、  git commit -m "对本次提交进行描述"
+4、  git log   查看日志
+5、
