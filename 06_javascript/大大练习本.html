@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        var sum1 = +prompt("请输入第一个数");
+        var sum2 = +prompt("请输入第二个数");
+        var sum3 = +prompt("请输入第三个数");
+
+        if(sum1<sum2 && sum1<sum3){
+
+        }
+
+    </script> -->
+    <!-- <script>
+        var chenji = +prompt("请输入小明的期末成绩为：")
+
+        if(chenji > 100 || chenji < 0 || isNaN(chenji)){
+            alert("输入成绩不能大于100或者小于0fen")
+        }
+        else if (chenji > 99) {
+            alert("奖励一辆BMW");
+        } 
+        else if (chenji >= 80) {
+            alert("奖励一台iphon15s");
+        }
+        else if(chenji >= 60){
+            alert("奖励一本参考书");
+        }
+        else{
+            alert("没有奖励，再接再厉");
+        }
+    </script> -->
+    <!-- <script>
+        var height = +prompt("请输入你的身高(cm)："),
+            money = +prompt("请输入你的资产(万)："),
+            yanzhi = +prompt("你的帅打多少分(px)");
+        if(height > 180 && money >1000 && yanzhi >500){
+            alert("我一定要嫁给他")
+        }
+        else if(height > 180 || money >1000 || yanzhi >500){
+            alert("还行吧")
+        }
+        else{
+            alert("不嫁")
+        }
+    </script> -->
+
+    <!-- <script>
+        var score = 60;
+        var 
+        switch(score){
+            case 60:
+                console.log("合格")
+                break;
+        }
+    </script> -->
+    <!-- <script>
+        var n = 1;
+        while(true){
+            alert(n++);
+        }
+        //循环需要的三个要件：
+            //初始化表达式
+            //条件表达式
+            //更新表达式
+    </script>-->
+    <!-- <script>
+        var i = 0;
+        while(i < 100000){
+            document.write(i++ +"<br />")
+        }
+    </script> -->
+    <script>
+        // do{
+        //     document.write(i++ +"<br />")
+        // }while(i <= 10)
+
+        // 执行流程
+        // 语句基本一致，差别在于先执行还是先判断
+        // do...while至少会执行一下次
+
+        // var tz = 1000 , i = 1;
+        // while(tz < 5000){
+        //     tz = tz * 1.024
+        //     document.write("需要投资时间等于" + i++)
+        // }
+        // for(i = 0 ; i < 10 ; i++){
+        //     alert(i)
+        // }
+
+
+
+        //    打印100以内的奇数的和
+        // var sum = 0;
+
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 != 0) {
+        //         document.write(i + "<br />")
+        //         sum = sum + i
+        //     }
+        // }
+        // document.write("奇数之和为："+sum);
+
+
+        // 打印1——100之间所有7的倍数的个数及总和
+
+        // var sum = 0, m = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 7 == 0) {
+        //         document.write(i + "<br />")
+        //         m++;
+        //         sum = sum + i;
+        //     }
+        // }
+        // document.write("7的倍数的个数为："+m+"<br />"+"所有7的倍数的总和为："+sum)
+
+
+        // 水仙花数
+        // 水仙花数是指一个3位数，它的每个位上的数字是3次
+
+
+        // for (var i = 100; i < 1000; i++) {
+        //     var bai = parseInt(i / 100),
+        //         shi = parseInt((i - (bai * 100)) / 10),
+        //         ge = i % 10;
+        //     if (bai * bai * bai + shi * shi * shi + ge * ge * ge == i) {
+        //         document.write(i + "<br />")
+        //     }
+        // }
+
+
+
+        // 在页面接收一个用户输入的数字，并判断这是数是否为质数
+        // var num = prompt("请输入一个大于1的整数：");
+        // if (num < 1) {
+        //     alert("该值不合法")
+        // } else {
+        //     var flag = true;
+        //     for (var i = 2; i < num; i++) {
+        //         if (num % i == 0) {
+        //             flag = false;
+        //         }
+        //     }
+        //     if (flag) {
+        //         alert("是质数");
+        //     } else {
+        //         alert("不是质数");
+        //     }
+        // }
+
+        // for (var s = 1; s <= 5; s++) {
+
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var j = 0; j < 6-i; j++) {
+        //         document.write("*&nbsp;&nbsp;")
+        //     }
+        //     document.write("<br />")
+
+        // }
+        // }
+        // for (var a = 1 ; a <10 ; a++){
+        //     for(var b =1 ; b <a+1 ; b++){
+        //             document.write(b+"*"+a+"="+a*b+"&nbsp;|&nbsp;")
+        //     }
+        //     document.write("<br />")
+        // }
+
+        // for (var i = 2; i <= 100; i++) {
+        //     flag = true;var flag = true;
+        //     for (var j = 2; j < i; j++) {
+        //         if (i % j == 0) {
+        //             flag = false;
+        //         } 
+        //     }
+        //     if (flag) {
+        //         document.write(i + "<br />")
+        //     }
+        // }
+
+
+        // hello:
+        // for(var i = 0 ; i < 10 ; i++){
+        //     document.write(i)
+        //     break;
+        // }
+
+        // console.time("biao");
+        // for (var i = 2; i <= 10000; i++) {
+        //     flag = true; var flag = true;
+        //     for (var j = 2; j <= Math.sqrt(i); j++) {
+        //         if (i % j == 0) {
+        //             flag = false;
+        //             break;
+        //         }
+        //     }
+        //     if (flag) {
+        //         document.write(i + "<br />")
+        //     }
+        // }
+        // console.timeEnd("biao");
+
+        // 对象:
+        // 创建对象
+        // var obj = new Object();
+        // obj.name = "孙悟空"
+        // obj.gender = "男"
+        // obj.age = "18"
+        // console.log(obj)
+
+        // var a = 123 , b = a;
+        // 函数也是一个对象：
+        // var fun = new Function("document.write('hello 这是我的第一个函数')");
+
+        // fun();
+        //函数声明
+        // function fun2(){
+        //     document.write("这是我的第二个函数");
+        // }
+        // fun2();
+
+        // function sum(a, b) {
+        //     // var a = 1 , b = 2;
+        //     document.write(a + b);
+        // }
+        // sum(1, 2);
+        // sum("hello",1)
+        // function sum(a, b, c) {
+        //     document.write(a + b + c)
+        //     var d = a + b + c;
+        // }
+        // sum(1, 2, 3)
+        // function isOu(num) {
+        //     return num % 2 == 0
+        // }
+        // var result = isOu(100);
+        // document.write(result)
+
+        // function yuanmian(r) {
+        //     var p = r * r * 3.14;
+        //     return p;
+        // }
+        // var ym = yuanmian(10);
+        // document.write(ym)
+
+        // function fun() {
+        //     alert("函数要执行了")
+        //     for (var i = 0; i < 5; i++) {
+
+        //         if (i == 2) {
+        //             // break;
+        //             continue;
+        //         }
+        //         document.write(i)
+        //     }
+        //     alert("函数执行完了")
+
+        // }
+        // fun();
+        // var a = 0;
+        // for (var n in document) {
+        //     a++;
+        //     document.write(a + "<br />")
+        //     document.write("属性名" + n + "<br />")
+        //     document.write("属性值" + document[n] + "<br />")
+
+        // }
+
+        // var a = 123;
+        // function fun() {
+        //     alert(a);
+        // }
+        // fun();
+
+        // var a = 123;
+        // function fun(a) {
+        //     alert(a);
+        //     a = 456;
+        // }
+        // fun(123);
+        // alert(a);
+
+        // 61:
+
+        // function fun(a, b) {
+        //     console.log("a = " + a + "b = " + b);
+        // }
+        // fun(123, 456);
+
+        // var name = "全局";
+        // function fun(){
+        //     console.log(this.name);
+        // }
+        // var obj = {
+        //     name:"孙悟空",
+        //     sayName:fun
+        // }
+        // var obj2 = {
+        //     name:"沙和尚",
+        //     sayName:fun
+        // }
+        // obj2.sayName();
+
+        // var obj = {
+        //     name:"孙悟空",
+        //     age:18,
+        //     genName:function(){
+        //         alert(this.name)
+        //     }
+        // }
+        // // 这个叫做定义函数
+        // function createPerson(){
+        //     var obj = new Object();
+        //     return obj;
+        // }
+
+        // 运用函数晶摄氏度转化为华氏度
+        // function shezhuanhua(sheshidu) {
+        //     return sheshidu * 9 / 5 + 32
+        // }
+        // var x = shezhuanhua(100)
+
+        // document.write(x)
+
+        // function Person(name , age , gender){
+        //     this.name = name;
+        //     this.age = age;
+        //     this.gender = gender;
+        //     this.sayName = function(){
+        //         alert("Hello大家好，我是"+this.name);
+        //     }
+        // }
+        // var per = new person("孙悟空");
+        // console.log(object)
+        // console.log(string)
+
+        // delete window.object
+        // delete window.string
+
+        // console.log(object)
+        // console.log(string)
+        // var obj = {};
+        // console.log(obj);
+
+
+        //     工厂方法
+        //     工厂方法
+        //     工厂方法
+        //     工厂方法
+        //     工厂方法
+        // function createPerson(name, age, gender) {
+        //     var obj = new Object();
+        //     obj.name = name;
+        //     obj.age = age;
+        //     obj.gender = gender;
+        //     obj.sayName = function () {
+        //         alert(this.name);
+        //     }
+        //     return obj;
+        // }
+        // var obj1 = createPerson("孙悟空", 18 , "男");
+        // console.log(obj1);
+        // obj1.sayName();  //obj1执行了这个函数，所以this指obj1
+
+        // 构造函数
+        // 构造函数
+        // 构造函数
+        // 构造函数
+        // 构造函数
+        //     function PreateDog(){
+
+        //     }
+
+        // var arr = ["孙悟空", "猪八戒", "沙和尚"]
+        // for (var i = 0; i < arr.length; i++) {
+        //     document.write(arr[i]+"<br />")
+        // }
+
+        // var Person = function () { };
+
+
+
+
+        // 数组筛选后重新分配练习
+
+        // var Person = function () { };
+        // function person1(name, age) {
+        //     var per = new Person();
+        //     per.name = name;
+        //     per.age = age;
+        //     return per;
+        // }
+        // var per1 = person1("孙悟空", 18);
+        // var per2 = person1("猪八戒", 28);
+        // var per3 = person1("红孩儿", 8);
+        // var per4 = person1("蜘蛛精", 16);
+        // var per5 = person1("二郎神", 38);
+        // var perarr = [per1, per2, per3, per4, per5];
+        // console.log(perarr)
+        // function getAdult(arrName) {
+        //     var perarr1 = []
+        //     for (i = 0; i <= arrName.length - 1; i++) {
+        //         if (arrName[i].age >= 18) {
+        //             perarr1[perarr1.length] = arrName[i]//这里可以运用方法
+        //         }
+        //     }
+        //     return console.log(perarr1)
+        // }
+        // getAdult(perarr);
+
+
+        //         function gongchang() {
+        //             gongchang.__proto__.Goujian = function () {
+
+        // }
+        //             var duixiang = new Goujian();
+        //            return console.log(duixiang);
+        //         }
+        //         gongchang();
+
+
+
+        // var Person = function () { };
+        // function person1(name, age) {
+        //     var per = new Person();
+        //     per.name = name;
+        //     per.age = age;
+        //     return per;
+        // }
+        // var per1 = person1("孙悟空", 18);
+        // var per2 = person1("猪八戒", 28);
+        // var per3 = person1("红孩儿", 8);
+        // var per4 = person1("蜘蛛精", 16);
+        // var per5 = person1("二郎神", 38);
+        // var perarr = [per1, per2, per3, per4, per5];
+        // console.log(perarr)
+        // function getAdult(arrName) {
+        //     var perarr1 = []
+        //     for (i = 0; i <= arrName.length - 1; i++) {
+        //         if (arrName[i].age >= 18) {
+        //             // perarr1[perarr1.length] = arrName[i]//这里可以运用方法
+        //             perarr1.push(arrName[i])
+        //         }
+        //     }
+        //     return console.log(perarr1)
+        // }
+        // getAdult(perarr);
+
+        // 去重练习
+
+        // var arr = [1, 2, 3, 2, 1, 3, 4, 2, 5];
+
+        // for (var i = 0; i < arr.length; i++) {
+        //     for (var j = i + 1; j < arr.length; j++) {
+        //         if (arr[i] == arr[j]) {
+        //             arr.splice(j, 1);
+        //             j--;
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+
+        // var d = Date();
+        // console.log(d)
+
+
+        
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
