@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <button id = "btn" onclick = "">我是一个按钮</button> 
-   <!-- 上面是一个元素对象 -->
-   <script type = "text/javascript">
-       var btn = document.getElementById("btn");
-        // 文档节点 是window对象的属性
-        btn.innerHTML = "I'm Button";
-        // 给选择的对象绑定对应事件
-        btn.onclick = function(){
-            alert("这边需要是个函数才可以");
-        };
-        // 事件被出发是对应的函数会被调用——回调函数
-        // 两种方式绑定，一种直接在标签里通过属性来绑定，一种获取对象通过给对象的指定属性绑定回调函数来使用
-   </script>
+    <!-- <button id = "btn" onclick = "">我是一个按钮</button>  -->
+    <!-- 上面是一个元素对象 -->
+    <!-- <script type = "text/javascript">
+        //var btn = document.getElementById("btn");
+        // // 文档节点 是window对象的属性
+        // btn.innerHTML = "I'm Button";
+        // // 给选择的对象绑定对应事件
+        // btn.onclick = function(){
+        //     alert("这边需要是个函数才可以");
+        // };
+        // // 事件被出发是对应的函数会被调用——回调函数
+        // // 两种方式绑定，一种直接在标签里通过属性来绑定，一种获取对象通过给对象的指定属性绑定回调函数来使用
+
+   </script> -->
+
+    <button id="btn">点我一下</button>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            alert("点了我一下");
+        }
+    </script>
 </body>
+
 </html>
