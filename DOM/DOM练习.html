@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 去除默认样式 */
+        }
+
+
+        #outer {
+            width: 500px;
+            height: 550px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgb(255, 123, 123);
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            var up = document.getElementById("up");
+            var dp = document.getElementById("dp");
+            var img = document.getElementsByTagName("img")[0];
+
+            var imgarr = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg'];
+            var info = document.getElementById("info");
+            var index = 0;
+            dp.onclick = function () {
+                // 下一张
+                index++;
+                if (index > imgarr.length - 1) {
+                    index = 0;
+                };
+                img.src = imgarr[index];
+                info.innerHTML = "一共"+imgarr.length+"张图片，现在显示第"+(index+1)+"张";
+            };
+
+            up.onclick = function () {
+                index--;
+                if (index < 0) {
+                    index = imgarr.length - 1
+                }
+                img.src = imgarr[index];
+                info.innerHTML = "一共"+imgarr.length+"张图片，现在显示第"+(index+1)+"张";
+            };
+            info.innerHTML = "一共"+imgarr.length+"张图片，现在显示第"+(index+1)+"张";
+
+        };
+    </script>
+</head>
+
+<body>
+    <div id="outer">
+        <p id="info"></p>
+        <img src="./img/1.jpg" alt="打架">
+        <button id="up">上一张</button>
+        <button id="dp">下一张</button>
+    </div>
+</body>
+
+</html>
