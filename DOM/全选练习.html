@@ -36,9 +36,9 @@
             //4.#sendBtn提交
             //先确定要选的对象，然后遍历判断true|false,将true的alert提交
             var sendBtn = document.getElementById("sendBtn");
-            sendBtn.onclick = function(){
-                for(var i = 0 ; i < items.length ; i++){
-                    if(items[i].checked){
+            sendBtn.onclick = function () {
+                for (var i = 0; i < items.length; i++) {
+                    if (items[i].checked) {
                         alert(items[i].value);
                     }
                 };
@@ -46,17 +46,28 @@
             //5.#checkedALLBox
             // 全选全不选的多选框
             var checkedALLBox = document.getElementById("checkedALLBox");
-            checkedALLBox.onclick = function(){
+            checkedALLBox.onclick = function () {
                 // if(checkedALLBox.checked){
                 //     checkedAllBtn.onclick()
                 // }else{
                 //     checkedNOBtn.onclick()
                 // }
-                for(var i = 0 ; i < items.length ; i++){
+                for (var i = 0; i < items.length; i++) {
                     items[i].checked = this.checked;
                 }
             };
             //6.items
+            //如果四个都选中上面的才选中，否则不选中
+            for(var i = 0 ; i < items.length ; i++){
+                items[i].onclick = function(){
+                    checkedALLBox.checked = true;
+                    for(var j = 0 ; j < items.length ; j++){
+                        if(!items[j].checked){
+                            checkedALLBox.checked = false;
+                        };
+                    };
+                };
+            };
         };
 
     </script>
